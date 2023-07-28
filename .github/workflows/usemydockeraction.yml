@@ -35,6 +35,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      - uses: sujithq/mydockeraction
+      - uses: sujithq/mydockeraction@v0.1.0
         with:
           who-to-greet: 'Mona the Octocat'
