@@ -34,7 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
+      # Runs a Custom Docker Acction
       - uses: sujithq/mydockeraction@v0.1.4
+        id: myaction
         with:
           who-to-greet: 'Mona the Octocat'
+
+      # Display the Custom Docker Acction Output
+      - name: Show output
+        run: echo "${{ steps.myaction.outputs.time }}"          
